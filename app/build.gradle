@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.leakhunter'
+    namespace 'package com.leakhunter.mobile'
     compileSdk 35
 
     defaultConfig {
-        applicationId 'com.leakhunter'
+        applicationId 'package com.leakhunter.mobile'
         minSdk 23
         targetSdk 35
         versionCode 1
