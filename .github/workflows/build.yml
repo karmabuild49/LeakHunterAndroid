@@ -33,15 +33,11 @@ jobs:
           gradle-version: "8.9"
 
 
+      
       - name: Build debug APK
         shell: bash
-        run: |
-          if [ -f ./gradlew ]; then
-            chmod +x ./gradlew
-            ./gradlew --no-daemon assembleDebug
-          else
-            gradle --no-daemon assembleDebug
-          fi
+        run: gradle --no-daemon assembleDebug
+
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
